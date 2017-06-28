@@ -1,0 +1,50 @@
+.addModal {
+  width: 90vw;
+  max-width: 400px;
+  background: $color2;
+  color: $color1;
+  padding: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0.4em 0.4em 1em #000;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+  text-align: center;
+  transition: 0.3s;
+
+
+  p {
+    font: $fontMedium $font;
+  }
+
+  textarea {
+    min-height: 20vh;
+  }
+
+  textarea, input {
+    padding: 0.5em;
+  }
+
+}
+
+.addModal > * {
+  flex: 1 0 100%;
+  margin-top: 0.5em;
+}
+
+.highlight {
+  box-shadow: 1px 1px 3px 1px #29a6c2, -1px -1px 3px 1px #29a6c2;
+  transition: 0.1s;
+}
+
+.toggle {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  z-index: 99;
+}

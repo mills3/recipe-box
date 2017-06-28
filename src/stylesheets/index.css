@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css?family=Italianno");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 14px; }
+
+@media screen and (min-height: 600px) {
+  html {
+    font-size: 20px; } }
+.app {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; }
+  .app .bgImage {
+    background: url(".././assets/chocolates.jpg");
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -9; }
+  .app header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.3em;
+    font: 2.5rem "Italianno", Verdana, sans-serif;
+    background: linear-gradient(to bottom right, #EDE3CC, rgba(237, 227, 204, 0.5));
+    color: #341D0F; }
+
+button {
+  background: none;
+  border: 1px solid #341D0F;
+  color: #341D0F;
+  font: 1.2rem "Italianno", Verdana, sans-serif;
+  padding: 0.1em 0.8em;
+  cursor: pointer; }
+
+button:active {
+  background: #341D0F;
+  color: #EDE3CC; }
+
+.addModal {
+  width: 90vw;
+  max-width: 400px;
+  background: #EDE3CC;
+  color: #341D0F;
+  padding: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0.4em 0.4em 1em #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+  text-align: center;
+  transition: 0.3s; }
+  .addModal p {
+    font: 1.5rem "Italianno", Verdana, sans-serif; }
+  .addModal textarea {
+    min-height: 20vh; }
+  .addModal textarea, .addModal input {
+    padding: 0.5em; }
+
+.addModal > * {
+  flex: 1 0 100%;
+  margin-top: 0.5em; }
+
+.highlight {
+  box-shadow: 1px 1px 3px 1px #29a6c2, -1px -1px 3px 1px #29a6c2;
+  transition: 0.1s; }
+
+.toggle {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  z-index: 99; }
+
+.showModal {
+  width: 90vw;
+  max-width: 400px;
+  max-height: 90vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 0.5em;
+  background: #EDE3CC;
+  color: #341D0F;
+  box-shadow: 0.4em 0.4em 1em #000;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+  text-align: center;
+  transition: 0.3s; }
+  .showModal p {
+    font: 2.5rem "Italianno", Verdana, sans-serif; }
+  .showModal ul {
+    text-align: left;
+    margin-left: 1em;
+    font: 1.5rem "Italianno", Verdana, sans-serif;
+    width: 90%; }
+    .showModal ul li {
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+      text-overflow: ellipsis;
+      hyphens: auto; }
+
+.showModal > *:not(ul) {
+  margin-top: 0.5em;
+  flex: 1 0 100%; }
+
+.toggle {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1; }
+
+.editModal {
+  width: 90vw;
+  max-width: 400px;
+  background: #EDE3CC;
+  color: #341D0F;
+  padding: 0.5em;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0.4em 0.4em 1em #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+  text-align: center;
+  transition: 0.3s; }
+  .editModal p {
+    font: 1.5rem "Italianno", Verdana, sans-serif; }
+  .editModal textarea {
+    min-height: 100px;
+    padding: 0.3em; }
+
+.editModal > * {
+  flex: 1 0 100%;
+  margin-top: 0.5em; }
+
+.toggle {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1; }
+
+.savedRecipes {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  color: #341D0F;
+  overflow-y: auto; }
+  .savedRecipes .list {
+    background: linear-gradient(to bottom right, #EDE3CC, rgba(237, 227, 204, 0.5));
+    padding: 0.1em 0.5em;
+    flex: 1 0 33%;
+    white-space: nowrap;
+    font: 1.5rem "Italianno", Verdana, sans-serif;
+    cursor: pointer; }
+    @media screen and (min-width: 500px) {
+      .savedRecipes .list {
+        flex: 1 0 20%; } }
+    .savedRecipes .list:hover {
+      text-decoration: underline; }
+
+.defaultMessage {
+  font: 24vmin "Italianno", Verdana, sans-serif;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: difference;
+  color: #c2c2c2; }
+
+/*# sourceMappingURL=index.css.map */

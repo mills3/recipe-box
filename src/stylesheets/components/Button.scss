@@ -1,0 +1,13 @@
+button {
+  background: none;
+  border: 1px solid $color1;
+  color: $color1;
+  font: $fontSmall $font;
+  padding: 0.1em 0.8em;
+  cursor: pointer;
+}
+
+button:active {
+  background: $color1;
+  color: $color2;
+}
