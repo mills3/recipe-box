@@ -3,12 +3,13 @@
   flex-wrap: wrap;
   text-align: center;
   color: $color1;
-
+  max-width: 100vw;
+  max-height: 85%;
   overflow-y: auto;
 
   .list {
     background: linear-gradient(to  bottom right, $color2, transparentize($color2, 0.5));
-    padding: 0.1em 0.5em;
+    padding: 0.2em 0.5em;
     flex: 1 0 33%;
     white-space: nowrap;
     font: $fontMedium $font;
